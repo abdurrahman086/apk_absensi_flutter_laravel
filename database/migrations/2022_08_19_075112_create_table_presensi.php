@@ -19,8 +19,8 @@ class CreateTablePresensi extends Migration
             $table->decimal('latitude', 12,5);
             $table->decimal('longitude', 12,5);
             $table->date('tanggal');
-            $table->time('masuk');
-            $table->time('pulang');
+            $table->time('masuk')->nullable();
+            $table->time('pulang')->nullable();
             $table->timestamps();
         });
     }
